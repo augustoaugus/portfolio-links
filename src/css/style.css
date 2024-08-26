@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+}
+
+.background {
+    background-image: url(../images/img-palco.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* HEADER */
+
+nav .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+nav .menu li {
+    font-size: 6.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav .menu li a {
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+nav .menu li a:hover {
+    color: greenyellow;
+    padding-left: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+footer p {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+footer .icon {
+    font-size: 3rem;
+    color: white;
+    margin-right: 3rem;
+}
+
+address a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #AFAFAF;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* JAVASCRIPT */
+
+address.remove {
+    display: none;
+}
+
+footer p.remove {
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    /* HEADER */
+
+    nav .menu li {
+        font-size: 4.8rem;
+    }
+}
+
+@media (max-width: 426px) {
+    /* HEADER */
+
+    nav .menu li {
+        font-size: 4.8rem;
+    }
+
+    /* FOOTER */
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+    footer .icon {
+        font-size: 3rem;
+        margin-right: 1.5rem;
+    }
+
+    address a {
+        font-size: 1.4rem;
+    }
+}
